@@ -1,0 +1,14 @@
+{
+  "name": "harbor",
+  "private": true,
+  "packageManager": "pnpm@9.1.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  }
+}
