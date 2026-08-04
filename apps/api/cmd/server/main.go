@@ -36,6 +36,7 @@ func main() {
 
 	workspaceHandler := handlers.NewWorkspaceHandler(pool)
 	roomHandler := handlers.NewRoomHandler(pool)
+	liveKitHandler := handlers.NewLiveKitHandler(pool, cfg)
 
 	r := chi.NewRouter()
 	r.Use(chimw.Logger)
@@ -63,6 +64,7 @@ func main() {
 
 			r.Get("/rooms", roomHandler.List)
 			r.Post("/rooms", roomHandler.Create)
+			r.Post("/rooms/{roomID}/join", liveKitHandler.Join)
 		})
 	})
 
