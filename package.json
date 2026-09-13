@@ -9,9 +9,12 @@
   },
   "workspaces": [
     "packages/*",
-    "app/*"
+    "apps/*"
   ],
   "devDependencies": {
     "turbo": "^2.0.0"
-  }
+  },
+  "trustedDependencies": [
+    "mediasoup"
+  ]
 }
