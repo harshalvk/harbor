@@ -9,12 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1146.0",
+    "@harbor/shared": "workspace:*",
     "mediasoup-client": "^3.23.1",
     "next": "16.3.4",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "zod": "^4.5.4",
-    "@harbor/shared" : "workspace:*"
+    "zod": "^4.5.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
